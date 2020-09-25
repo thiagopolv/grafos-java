@@ -51,7 +51,7 @@ public class Dijkstra {
 
     private static No noDeMenorDistancia(Set<No> nosNaoSetados) {
         No noDeMenorDistancia = null;
-        int menorDistancia = Integer.MAX_VALUE;q
+        int menorDistancia = Integer.MAX_VALUE;
 
         for (No no: nosNaoSetados) {
             int distanciaDoNo = no.getDistancia();
