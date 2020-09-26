@@ -24,4 +24,21 @@ public class No {
         nosAdjacentes.put(destino, distancia);
     }
 
+    public String caminhoMaisCurtoToString() {
+        StringBuilder string = new StringBuilder();
+        string.append("Caminho mais curto de ").append(caminhoMaisCurto.get(0).getNome()).append(" até ")
+                .append(getNome()).append(":").append(System.lineSeparator());
+
+        for (No no: caminhoMaisCurto) {
+            if (no.equals(caminhoMaisCurto.getLast())) {
+                string.append(no.getNome()).append(" -> ").append(getNome());
+            } else {
+                string.append(no.getNome()).append(" -> ");
+            }
+        }
+
+        string.append(System.lineSeparator()).append("Distância: ").append(distancia);
+
+       return string.toString();
+    }
 }

@@ -26,7 +26,7 @@ public class Dijkstra {
                 No noAdjacente = parAdjacente.getKey();
                 Integer pesoDoVertice = parAdjacente.getValue();
 
-                if (!nosNaoSetados.contains(noAdjacente)) {
+                if (!nosSetados.contains(noAdjacente)) {
                     calcularDistanciaMinima(noAdjacente, pesoDoVertice, noAtual);
                     nosNaoSetados.add(noAdjacente);
                 }
@@ -64,4 +64,5 @@ public class Dijkstra {
 
         return noDeMenorDistancia;
     }
+
 }
