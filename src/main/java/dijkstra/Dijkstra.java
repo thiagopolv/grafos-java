@@ -1,12 +1,12 @@
-package algoritmos;
+package dijkstra;
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 
-import estrutura.Grafo;
-import estrutura.No;
+import dijkstra.estrutura.Grafo;
+import dijkstra.estrutura.No;
 
 public class Dijkstra {
 

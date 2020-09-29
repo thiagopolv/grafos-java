@@ -9,7 +9,9 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import algoritmos.Dijkstra;
+import dijkstra.Dijkstra;
+import dijkstra.estrutura.Grafo;
+import dijkstra.estrutura.No;
 
 
 class DijkstraTest {

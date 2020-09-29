@@ -1,14 +1,12 @@
-package aplicacoes;
+package dijkstra.aplicacoes;
 
 import java.util.InputMismatchException;
 import java.util.Optional;
 import java.util.Scanner;
 
-import com.sun.corba.se.impl.presentation.rmi.IDLTypesUtil;
-
-import algoritmos.Dijkstra;
-import estrutura.Grafo;
-import estrutura.No;
+import dijkstra.Dijkstra;
+import dijkstra.estrutura.Grafo;
+import dijkstra.estrutura.No;
 
 public class CidadesDoTriangulo {
 
@@ -139,7 +137,7 @@ public class CidadesDoTriangulo {
                     System.out.println(System.lineSeparator());
                     break;
                 case 2:
-                    System.out.println("Escolha uma cidade de origem: (Digite sem acentos)");
+                    System.out.println("Escolha uma cidade de origem: (Digite sem acentos)b");
                     String origem = scanner.nextLine();
                     Optional<No> noOrigem = grafo.encontrarNoPorNome(origem);
 

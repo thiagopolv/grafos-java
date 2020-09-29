@@ -1,4 +1,4 @@
-package estrutura;
+package dijkstra.estrutura;
 
 import java.util.HashSet;
 import java.util.Optional;
