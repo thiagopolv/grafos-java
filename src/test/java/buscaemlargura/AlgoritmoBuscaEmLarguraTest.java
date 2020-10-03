@@ -16,20 +16,12 @@ import buscaemlargura.estrutura.No;
 
 class AlgoritmoBuscaEmLarguraTest {
 
-    private Arvore<Integer> raiz;
-    private Arvore<Integer> raizNo1;
-    private Arvore<Integer> raizNo2;
-    private Arvore<Integer> raizNo3;
-    private Arvore<Integer> raizNo4;
-    private Arvore<Integer> raizNo5;
-
     private No<Integer> inicio;
     private No<Integer> no1;
     private No<Integer> no2;
     private No<Integer> no3;
     private No<Integer> no4;
     private No<Integer> no5;
-
 
     @BeforeEach
     void setUp() {
@@ -81,12 +73,4 @@ class AlgoritmoBuscaEmLarguraTest {
         no5.connect(inicio);
     }
 
-    private void iniciarArvore() {
-        raiz = Arvore.of(10);
-        raizNo1 = raiz.adicionarFilho(1);
-        raizNo3 = raiz.adicionarFilho(3);
-        raizNo4 = raiz.adicionarFilho(4);
-        raizNo2 = raizNo1.adicionarFilho(2);
-        raizNo5 = raizNo4.adicionarFilho(5);
-    }
 }

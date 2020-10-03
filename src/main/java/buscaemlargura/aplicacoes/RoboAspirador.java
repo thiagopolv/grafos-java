@@ -19,31 +19,24 @@ public class RoboAspirador {
         No<String> cozinha = new No<>("Cozinha");
         No<String> salao = new No<>("Salão");
         cozinha.connect(salao);
-        salao.connect(cozinha);
 
         No<String> corredor = new No<>("Corredor");
         corredor.connect(salao);
-        salao.connect(corredor);
 
         No<String> banho1 = new No<>("Banho 1");
         banho1.connect(corredor);
-        corredor.connect(banho1);
 
         No<String> quarto1 = new No<>("Quarto 1");
         quarto1.connect(corredor);
-        corredor.connect(quarto1);
 
         No<String> quarto2 = new No<>("Quarto 2");
         quarto2.connect(corredor);
-        corredor.connect(quarto2);
 
         No<String> suite = new No<>("Suite");
         suite.connect(corredor);
-        corredor.connect(suite);
 
         No<String> banho2 = new No<>("Banho 2");
         banho2.connect(suite);
-        suite.connect(banho2);
 
         List<No> nos = Arrays.asList(cozinha, salao, corredor, banho1, quarto1, quarto2, suite, banho2);
 
